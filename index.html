@@ -12,65 +12,31 @@
 </head>
 
 <body>
-  <h3>Experimental</h3>
-<form name="trainingPaces">
- <fieldset>
-  <legend>Renato Canova's Training Paces</legend>
-	 <br>
-	 <label>Select Event:</label>
-	 <br>
-	 <select id="event" onchange="totalTime();">
-		 <option value="select" selected>SELECT</option>
-		 <option value="mile">1-Mile</option>
-		 <option value="5K">5K</option>
-		 <option value="10K">10K</option>
-		 <option value="half">Half-Marathon</option>
-		 <option value="full">Marathon</option>
-	 </select>
-	 <br>
-	 <br>
-  <label>Race Pace:</label>
-  <br>
-  <input type="text" name="thour" maxlength="2" size="4" placeholder="hh" onchange="totalTime();">
-  <input type="text" name="tmin" maxlength="2" size="4" placeholder="mm" onchange="totalTime();">
-  <input type="text" name="tsec" maxlength="2" size="4" placeholder="ss" onchange="totalTime();">
-  <table>
-   <tr>
-    <td></td>
-    <th>min/mi</th>
-    <th>min/km</th>
-    <th>s/400</th>
-   </tr>
-   <tr>
-    <th>Long-Fast (Fundamental)</th>
-    <td><input type="text" size="15" name="longFastSpeed" readonly></td>
-    <td><input type="text" size="15" name="longFastKm" readonly></td>
-    <td><input type="text" size="15" name="longFast400" readonly></td>
-   </tr>
-   <tr>
-    <th>Fast-Continuous</th>
-    <td><input type="text" size="15" name="fastContinuous" readonly></td>
-    <td><input type="text" size="15" name="fastContinuousKm" readonly></td>
-    <td><input type="text" size="15" name="fastContinuous400" readonly></td>
-   </tr>
-   <tr>
-    <th>Special (90% and 110% RP)</th>
-    <td><input type="text" size="15" name="special" readonly></td>
-    <td><input type="text" size="15" name="specialKm" readonly></td>
-    <td><input type="text" size="15" name="special400" readonly></td>
-   </tr>
-   <tr>
-    <th>Specific (95%-100% RP)</th>
-    <td><input type="text" size="15" name="specific" readonly></td>
-    <td><input type="text" size="15" name="specificKm" readonly></td>
-    <td><input type="text" size="15" name="specific400" readonly></td>
-   </tr>
-  </table>
+  <div class="jumbotron">
+				<p>
+						<a name="top" class="anchor"> </a>
+				</p>
+				<h1 class="text-center" style="padding-top: 100px; padding-bottom: 200px; color: white">Running Resources</h1>
+		</div>
 
- </fieldset>
-</form>
-  
-    <script src="https://rawgit.com/billcarrollxc/Running-Resources/master/index.js"></script>
+		<div class="container-fluid">
+				<nav class="nav navbar-default navbar-fixed-top">
+						<div class="navbar-header">
+								<a href="#top" class="navbar-brand">Running Resources</a>
+						</div>
+						<ul class="nav navbar-nav">
+								<li><a href="athlete.html">By Athlete</a>
+								</li>
+								<li><a href="coach.html">By Coach</a></li>
+								<li><a href="topic.html">By Topic</a></li>
+							<li><a href="calculators.html">Calculators</a></li>
+						</ul>
+				</nav>
+
+				<!-- Scripts -->
+				<script src="scripts/index.js"></script>
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 </body>
 </html>
