@@ -1,3 +1,13 @@
+/*
+* ToDo:
+* add half-marathon paces
+* add marathon paces
+* cross check EVERYTHING with this: https://drive.google.com/file/d/0B_zzkn1-wR0dYzkzM2U0ZjctMjE1NC00ZjI4LWI5YTgtMTRhY2NhYjBhZjQz/view
+* go back to original Canova posts to make sure Davis is right about difference between short & long distance training
+*
+*
+*
+*/
 // DO NOT DELETE!!!
 // I don't know why yet, but these are essential for the program to work.
 var thour = document.trainingPaces.thour.value;
