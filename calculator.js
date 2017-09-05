@@ -1,4 +1,3 @@
-$("document").ready(function(){
 // DO NOT DELETE!!!
 // I don't know why yet, but these are essential for the program to work.
 var thour = document.trainingPaces.thour.value;
@@ -956,4 +955,3 @@ function totalTime() {
 					))
 		);
 	}}
-})
