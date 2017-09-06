@@ -1,13 +1,10 @@
 /*
 * ToDo:
-* add half-marathon paces
-* add marathon paces
 * cross check EVERYTHING with this: https://drive.google.com/file/d/0B_zzkn1-wR0dYzkzM2U0ZjctMjE1NC00ZjI4LWI5YTgtMTRhY2NhYjBhZjQz/view
 * go back to original Canova posts to make sure Davis is right about difference between short & long distance training
 *
-*
-*
 */
+
 // DO NOT DELETE!!!
 // I don't know why yet, but these are essential for the program to work.
 var thour = document.trainingPaces.thour.value;
@@ -619,11 +616,12 @@ function totalTime() {
 		);
 
 		// calculates special min/mi
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
 		document.trainingPaces.special.value = "".concat(
-			Math.floor(0.9 * totalTime / 60) +
+			Math.floor(0.965 * totalTime / 60) +
 				":" +
 				get2D(
-					Math.round((0.9 * totalTime / 60 - Math.floor(0.9 * totalTime / 60)) * 60)
+					Math.round((0.965 * totalTime / 60 - Math.floor(0.965 * totalTime / 60)) * 60)
 				) +
 				" and " +
 				(Math.floor(1.1 * totalTime / 60) +
@@ -634,12 +632,13 @@ function totalTime() {
 		);
 
 		// calculates special min/km
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
 		document.trainingPaces.specialKm.value = "".concat(
-			Math.floor(0.9 * totalTime / 60 / km) +
+			Math.floor(0.965 * totalTime / 60 / km) +
 				":" +
 				get2D(
 					Math.round(
-						(0.9 * totalTime / 60 / km - Math.floor(0.9 * totalTime / 60 / km)) * 60
+						(0.965 * totalTime / 60 / km - Math.floor(0.965 * totalTime / 60 / km)) * 60
 					)
 				) +
 				" and " +
@@ -653,13 +652,14 @@ function totalTime() {
 		);
 
 		// calculates special s/400
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
 		document.trainingPaces.special400.value = "".concat(
-			Math.floor(0.9 * totalTime / 60 * quarter) +
+			Math.floor(0.965 * totalTime / 60 * quarter) +
 				":" +
 				get2D(
 					Math.round(
-						(0.9 * totalTime / 60 * quarter -
-							Math.floor(0.9 * totalTime / 60 * quarter)) *
+						(0.965 * totalTime / 60 * quarter -
+							Math.floor(0.965 * totalTime / 60 * quarter)) *
 							60
 					)
 				) +
@@ -739,7 +739,7 @@ function totalTime() {
 	} else if (document.getElementById("event").value === "half") {
 		// calculates long-fast min/mi
 		document.trainingPaces.longFastSpeed.value = "".concat(
-			Math.floor(1.05 * totalTime / 60) +
+			Math.floor(1.15 * totalTime / 60) +
 				":" +
 				get2D(
 					Math.round(
@@ -794,64 +794,65 @@ function totalTime() {
 
 		// calculates fast-continous min/mi
 		document.trainingPaces.fastContinuous.value = "".concat(
-			Math.floor(1.1 * totalTime / 60) +
+			Math.floor(1.045 * totalTime / 60) +
 				":" +
 				get2D(
-					Math.round((1.1 * totalTime / 60 - Math.floor(1.1 * totalTime / 60)) * 60)
+					Math.round((1.045 * totalTime / 60 - Math.floor(1.045 * totalTime / 60)) * 60)
 				) +
 				" -- " +
-				(Math.floor(1.125 * totalTime / 60) +
+				(Math.floor(1.065 * totalTime / 60) +
 					":" +
 					get2D(Math.round(
-						(1.125 * totalTime / 60 - Math.floor(1.125 * totalTime / 60)) * 60
+						(1.065 * totalTime / 60 - Math.floor(1.065 * totalTime / 60)) * 60
 					)))
 		);
 
 		// calculates fast-continous min/km
 		document.trainingPaces.fastContinuousKm.value = "".concat(
-			Math.floor(1.1 * totalTime / 60 / km) +
+			Math.floor(1.045 * totalTime / 60 / km) +
 				":" +
 				get2D(
 					Math.round(
-						(1.1 * totalTime / 60 / km - Math.floor(1.1 * totalTime / 60 / km)) * 60
+						(1.045 * totalTime / 60 / km - Math.floor(1.045 * totalTime / 60 / km)) * 60
 					)
 				) +
 				" -- " +
-				(Math.floor(1.125 * totalTime / 60 / km) +
+				(Math.floor(1.065 * totalTime / 60 / km) +
 					":" +
 					get2D(Math.round(
-						(1.125 * totalTime / 60 / km - Math.floor(1.125 * totalTime / 60 / km)) *
+						(1.065 * totalTime / 60 / km - Math.floor(1.065 * totalTime / 60 / km)) *
 							60
 					)))
 		);
 
 		// calculates fast-continous s/400
 		document.trainingPaces.fastContinuous400.value = "".concat(
-			Math.floor(1.1 * totalTime / 60 * quarter) +
+			Math.floor(1.045 * totalTime / 60 * quarter) +
 				":" +
 				get2D(
 					Math.round(
-						(1.1 * totalTime / 60 * quarter -
-							Math.floor(1.1 * totalTime / 60 * quarter)) *
+						(1.045 * totalTime / 60 * quarter -
+							Math.floor(1.045 * totalTime / 60 * quarter)) *
 							60
 					)
 				) +
 				" -- " +
-				(Math.floor(1.125 * totalTime / 60 * quarter) +
+				(Math.floor(1.065 * totalTime / 60 * quarter) +
 					":" +
 					get2D(Math.round(
-						(1.125 * totalTime / 60 * quarter -
-							Math.floor(1.125 * totalTime / 60 * quarter)) *
+						(1.065 * totalTime / 60 * quarter -
+							Math.floor(1.065 * totalTime / 60 * quarter)) *
 							60
 					)))
 		);
-
+	
 		// calculates special min/mi
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
 		document.trainingPaces.special.value = "".concat(
-			Math.floor(0.9 * totalTime / 60) +
+			Math.floor(0.965 * totalTime / 60) +
 				":" +
 				get2D(
-					Math.round((0.9 * totalTime / 60 - Math.floor(0.9 * totalTime / 60)) * 60)
+					Math.round((0.965 * totalTime / 60 - Math.floor(0.965 * totalTime / 60)) * 60)
 				) +
 				" and " +
 				(Math.floor(1.1 * totalTime / 60) +
@@ -862,12 +863,13 @@ function totalTime() {
 		);
 
 		// calculates special min/km
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
 		document.trainingPaces.specialKm.value = "".concat(
-			Math.floor(0.9 * totalTime / 60 / km) +
+			Math.floor(0.965 * totalTime / 60 / km) +
 				":" +
 				get2D(
 					Math.round(
-						(0.9 * totalTime / 60 / km - Math.floor(0.9 * totalTime / 60 / km)) * 60
+						(0.965 * totalTime / 60 / km - Math.floor(0.965 * totalTime / 60 / km)) * 60
 					)
 				) +
 				" and " +
@@ -881,13 +883,14 @@ function totalTime() {
 		);
 
 		// calculates special s/400
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
 		document.trainingPaces.special400.value = "".concat(
-			Math.floor(0.9 * totalTime / 60 * quarter) +
+			Math.floor(0.965 * totalTime / 60 * quarter) +
 				":" +
 				get2D(
 					Math.round(
-						(0.9 * totalTime / 60 * quarter -
-							Math.floor(0.9 * totalTime / 60 * quarter)) *
+						(0.965 * totalTime / 60 * quarter -
+							Math.floor(0.965 * totalTime / 60 * quarter)) *
 							60
 					)
 				) +
@@ -964,4 +967,236 @@ function totalTime() {
 						)
 					))
 		);
-	}}
+	} else if (document.getElementById("event").value === "full") {
+		// calculates long-fast min/mi
+		document.trainingPaces.longFastSpeed.value = "".concat(
+			Math.floor(1.1 * totalTime / 60) +
+				":" +
+				get2D(
+					Math.round(
+						(1.1 * totalTime / 60 - Math.floor(1.1 * totalTime / 60)) * 60
+					)
+				) +
+				" -- " +
+				(Math.floor(1.2 * totalTime / 60) +
+					":" +
+					get2D(Math.round(
+						(1.2 * totalTime / 60 - Math.floor(1.2 * totalTime / 60)) * 60
+					)))
+		);
+
+		// calculates long-fast min/km
+		document.trainingPaces.longFastKm.value = "".concat(
+			Math.floor(1.1 * totalTime / 60 / km) +
+				":" +
+				get2D(
+					Math.round(
+						(1.1 * totalTime / 60 / km - Math.floor(1.1 * totalTime / 60 / km)) * 60
+					)
+				) +
+				" -- " +
+				(Math.floor(1.2 * totalTime / 60 / km) +
+					":" +
+					get2D(Math.round(
+						(1.2 * totalTime / 60 / km - Math.floor(1.2 * totalTime / 60 / km)) * 60
+					)))
+		);
+
+		// calculates long-fast s/400
+		document.trainingPaces.longFast400.value = "".concat(
+			Math.floor(1.1 * totalTime / 60 * quarter) +
+				":" +
+				get2D(
+					Math.round(
+						(1.1 * totalTime / 60 * quarter -
+							Math.floor(1.1 * totalTime / 60 * quarter)) *
+							60
+					)
+				) +
+				" -- " +
+				(Math.floor(1.2 * totalTime / 60 * quarter) +
+					":" +
+					get2D(Math.round(
+						(1.2 * totalTime / 60 * quarter -
+							Math.floor(1.2 * totalTime / 60 * quarter)) *
+							60
+					)))
+		);
+
+		// calculates fast-continous min/mi
+		document.trainingPaces.fastContinuous.value = "".concat(
+			Math.floor(1.045 * totalTime / 60) +
+				":" +
+				get2D(
+					Math.round((1.045 * totalTime / 60 - Math.floor(1.045 * totalTime / 60)) * 60)
+				) +
+				" -- " +
+				(Math.floor(1.065 * totalTime / 60) +
+					":" +
+					get2D(Math.round(
+						(1.065 * totalTime / 60 - Math.floor(1.065 * totalTime / 60)) * 60
+					)))
+		);
+
+		// calculates fast-continous min/km
+		document.trainingPaces.fastContinuousKm.value = "".concat(
+			Math.floor(1.045 * totalTime / 60 / km) +
+				":" +
+				get2D(
+					Math.round(
+						(1.045 * totalTime / 60 / km - Math.floor(1.045 * totalTime / 60 / km)) * 60
+					)
+				) +
+				" -- " +
+				(Math.floor(1.065 * totalTime / 60 / km) +
+					":" +
+					get2D(Math.round(
+						(1.065 * totalTime / 60 / km - Math.floor(1.065 * totalTime / 60 / km)) *
+							60
+					)))
+		);
+
+		// calculates fast-continous s/400
+		document.trainingPaces.fastContinuous400.value = "".concat(
+			Math.floor(1.045 * totalTime / 60 * quarter) +
+				":" +
+				get2D(
+					Math.round(
+						(1.045 * totalTime / 60 * quarter -
+							Math.floor(1.045 * totalTime / 60 * quarter)) *
+							60
+					)
+				) +
+				" -- " +
+				(Math.floor(1.065 * totalTime / 60 * quarter) +
+					":" +
+					get2D(Math.round(
+						(1.065 * totalTime / 60 * quarter -
+							Math.floor(1.065 * totalTime / 60 * quarter)) *
+							60
+					)))
+		);
+	
+		// calculates special min/mi
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
+		document.trainingPaces.special.value = "".concat(
+			Math.floor(0.965 * totalTime / 60) +
+				":" +
+				get2D(
+					Math.round((0.965 * totalTime / 60 - Math.floor(0.965 * totalTime / 60)) * 60)
+				) +
+				" and " +
+				(Math.floor(1.1 * totalTime / 60) +
+					":" +
+					get2D(
+						Math.round((1.1 * totalTime / 60 - Math.floor(1.1 * totalTime / 60)) * 60)
+					))
+		);
+
+		// calculates special min/km
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
+		document.trainingPaces.specialKm.value = "".concat(
+			Math.floor(0.965 * totalTime / 60 / km) +
+				":" +
+				get2D(
+					Math.round(
+						(0.965 * totalTime / 60 / km - Math.floor(0.965 * totalTime / 60 / km)) * 60
+					)
+				) +
+				" and " +
+				(Math.floor(1.1 * totalTime / 60 / km) +
+					":" +
+					get2D(
+						Math.round(
+							(1.1 * totalTime / 60 / km - Math.floor(1.1 * totalTime / 60 / km)) * 60
+						)
+					))
+		);
+
+		// calculates special s/400
+		// "The long-distance (10km and up) specialists work at speeds of 102-105% of race pace for their high-speed interval workouts."
+		document.trainingPaces.special400.value = "".concat(
+			Math.floor(0.965 * totalTime / 60 * quarter) +
+				":" +
+				get2D(
+					Math.round(
+						(0.965 * totalTime / 60 * quarter -
+							Math.floor(0.965 * totalTime / 60 * quarter)) *
+							60
+					)
+				) +
+				" and " +
+				(Math.floor(1.1 * totalTime / 60 * quarter) +
+					":" +
+					get2D(
+						Math.round(
+							(1.1 * totalTime / 60 * quarter -
+								Math.floor(1.1 * totalTime / 60 * quarter)) *
+								60
+						)
+					))
+		);
+
+		// calculates specific min/mi
+		document.trainingPaces.specific.value = "".concat(
+			Math.floor(0.95 * totalTime / 60) +
+				":" +
+				get2D(
+					Math.round(
+						(0.95 * totalTime / 60 - Math.floor(0.95 * totalTime / 60)) * 60
+					)
+				) +
+				" -- " +
+				(Math.floor(1.05 * totalTime / 60) +
+					":" +
+					get2D(
+						Math.round(
+							(1.05 * totalTime / 60 - Math.floor(1.05 * totalTime / 60)) * 60
+						)
+					))
+		);
+
+		// calculates specific min/km
+		document.trainingPaces.specificKm.value = "".concat(
+			Math.floor(0.95 * totalTime / 60 / km) +
+				":" +
+				get2D(
+					Math.round(
+						(0.95 * totalTime / 60 / km - Math.floor(0.95 * totalTime / 60 / km)) * 60
+					)
+				) +
+				" -- " +
+				(Math.floor(1.05 * totalTime / 60 / km) +
+					":" +
+					get2D(
+						Math.round(
+							(1.05 * totalTime / 60 / km - Math.floor(1.05 * totalTime / 60 / km)) *
+								60
+						)
+					))
+		);
+
+		// calculates specific s/400
+		document.trainingPaces.specific400.value = "".concat(
+			Math.floor(0.95 * totalTime / 60 * quarter) +
+				":" +
+				get2D(
+					Math.round(
+						(0.95 * totalTime / 60 * quarter -
+							Math.floor(0.95 * totalTime / 60 * quarter)) *
+							60
+					)
+				) +
+				" -- " +
+				(Math.floor(1.05 * totalTime / 60 * quarter) +
+					":" +
+					get2D(
+						Math.round(
+							(1.05 * totalTime / 60 * quarter -
+								Math.floor(1.05 * totalTime / 60 * quarter)) *
+								60
+						)
+					))
+		);
+	}
+}
