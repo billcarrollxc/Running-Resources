@@ -1,8 +1,7 @@
 /*
 * ToDo:
-* cross check EVERYTHING with this: https://drive.google.com/file/d/0B_zzkn1-wR0dYzkzM2U0ZjctMjE1NC00ZjI4LWI5YTgtMTRhY2NhYjBhZjQz/view
-* go back to original Canova posts to make sure Davis is right about difference between short & long distance training
-*
+* original source: http://www.letsrun.com/forum/flat_read.php?thread=2959804
+* source 1: https://drive.google.com/file/d/0B_zzkn1-wR0dYzkzM2U0ZjctMjE1NC00ZjI4LWI5YTgtMTRhY2NhYjBhZjQz/view
 */
 
 // DO NOT DELETE!!!
