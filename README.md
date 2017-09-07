@@ -10,5 +10,3 @@ This project is useful because it separates good information from the piles of c
 At the moment, I want to keep this project an independent effort as I gain experience with coding/programming.  However, I created and linked below to a Google Form, where you can add suggestions for pages, links, or functionality.  Please, don't hesitate to fill it out.  I welcome your feedback.
 
 [https://goo.gl/forms/OkEoKuEHbCLVOde12]
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc0LICxzGQmwg4ltej-yGD6Nkk8qCFpNDN0MPtm0wRqt3FOAw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
