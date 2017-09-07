@@ -12,7 +12,7 @@ var tmin = document.trainingPaces.tmin.value;
 var tsec = document.trainingPaces.tsec.value;
 
 // borrowed an modified from http://sstut.com/javascript/add-zeros-in-front-of-numbers-after-decimal-point.php
-// This function will prepend a zero if there is only one digit to the right of the colon (e.g. 5:5 turns into 5:05)
+// This function will prepend a zero if there is only one digit to the right of the colon (e.g. 5:5 turns into 5:05).
 
 function get2D(num) {
 	if (
@@ -167,10 +167,10 @@ function totalTime() {
 					Math.round((0.9 * totalTime / 60 - Math.floor(0.9 * totalTime / 60)) * 60)
 				) +
 				" and " +
-				(Math.floor(1.08 * totalTime / 60) +
+				(Math.floor(1.065 * totalTime / 60) +
 					":" +
 					get2D(
-						Math.round((1.08 * totalTime / 60 - Math.floor(1.08 * totalTime / 60)) * 60)
+						Math.round((1.065 * totalTime / 60 - Math.floor(1.065 * totalTime / 60)) * 60)
 					))
 		);
 
@@ -184,11 +184,11 @@ function totalTime() {
 					)
 				) +
 				" and " +
-				(Math.floor(1.08 * totalTime / 60 / km) +
+				(Math.floor(1.065 * totalTime / 60 / km) +
 					":" +
 					get2D(
 						Math.round(
-							(1.08 * totalTime / 60 / km - Math.floor(1.08 * totalTime / 60 / km)) * 60
+							(1.065 * totalTime / 60 / km - Math.floor(1.065 * totalTime / 60 / km)) * 60
 						)
 					))
 		);
@@ -205,12 +205,12 @@ function totalTime() {
 					)
 				) +
 				" and " +
-				(Math.floor(1.08 * totalTime / 60 * quarter) +
+				(Math.floor(1.065 * totalTime / 60 * quarter) +
 					":" +
 					get2D(
 						Math.round(
-							(1.08 * totalTime / 60 * quarter -
-								Math.floor(1.08 * totalTime / 60 * quarter)) *
+							(1.065 * totalTime / 60 * quarter -
+								Math.floor(1.065 * totalTime / 60 * quarter)) *
 								60
 						)
 					))
@@ -395,10 +395,10 @@ function totalTime() {
 					Math.round((0.9 * totalTime / 60 - Math.floor(0.9 * totalTime / 60)) * 60)
 				) +
 				" and " +
-				(Math.floor(1.08 * totalTime / 60) +
+				(Math.floor(1.065 * totalTime / 60) +
 					":" +
 					get2D(
-						Math.round((1.08 * totalTime / 60 - Math.floor(1.08 * totalTime / 60)) * 60)
+						Math.round((1.065 * totalTime / 60 - Math.floor(1.065 * totalTime / 60)) * 60)
 					))
 		);
 
@@ -412,11 +412,11 @@ function totalTime() {
 					)
 				) +
 				" and " +
-				(Math.floor(1.08 * totalTime / 60 / km) +
+				(Math.floor(1.065 * totalTime / 60 / km) +
 					":" +
 					get2D(
 						Math.round(
-							(1.08 * totalTime / 60 / km - Math.floor(1.08 * totalTime / 60 / km)) * 60
+							(1.065 * totalTime / 60 / km - Math.floor(1.065 * totalTime / 60 / km)) * 60
 						)
 					))
 		);
@@ -433,12 +433,12 @@ function totalTime() {
 					)
 				) +
 				" and " +
-				(Math.floor(1.08 * totalTime / 60 * quarter) +
+				(Math.floor(1.065 * totalTime / 60 * quarter) +
 					":" +
 					get2D(
 						Math.round(
-							(1.08 * totalTime / 60 * quarter -
-								Math.floor(1.08 * totalTime / 60 * quarter)) *
+							(1.065 * totalTime / 60 * quarter -
+								Math.floor(1.065 * totalTime / 60 * quarter)) *
 								60
 						)
 					))
