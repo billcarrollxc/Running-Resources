@@ -1201,8 +1201,8 @@ function totalTime() {
 }
 
 function pacePercentages() {
-	var trainingSec = (60*(document.pacePercentages.trainingPaceMin)) + document.pacePercentages.trainingPaceSec;
-	var raceSec = (60*(document.pacePercentages.racePaceMin)) + document.pacePercentages.racePaceSec;
+	var trainingSec = (60*(document.pacePercentages.trainingPaceMin.value)) + document.pacePercentages.trainingPaceSec.value;
+	var raceSec = (60*(document.pacePercentages.racePaceMin.value)) + document.pacePercentages.racePaceSec.value;
 	var percent = trainingSec/raceSec;
 	
 	if (percent > 1) {
