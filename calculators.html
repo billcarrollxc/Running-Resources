@@ -98,13 +98,16 @@
 		<table><tbody>
 			<tr>
 				<th>Enter Training Pace:</th>
-				<td><input type="text" size="4" maxLength="2" name="trainingPaceMin" placeholder="mm"></td>
-				<td><input type="text" size="4" maxLength="2" name="trainingPaceSec" placeholder="ss"></td>
+				<td><input type="text" size="4" maxLength="2" name="trainingPaceMin" placeholder="mm" onchange="pacePercentages()"></td>
+				<td><input type="text" size="4" maxLength="2" name="trainingPaceSec" placeholder="ss" onchange="pacePercentages()"></td>
 			</tr>
 			<tr>
 				<th>Enter Race Pace:</th>
-				<td><input type="text" size="4" maxLength="2" name="racePaceMin" placeholder="mm"></td>
-				<td><input type="text" size="4" maxLength="2" name="racePaceSec" placeholder="ss"></td>
+				<td><input type="text" size="4" maxLength="2" name="racePaceMin" placeholder="mm" onchange="pacePercentages()"></td>
+				<td><input type="text" size="4" maxLength="2" name="racePaceSec" placeholder="ss" onchange="pacePercentages()"></td>
+			</tr>
+			<tr>
+				<td><input type="text" size="4" name="percentage" readonly></td>
 			</tr>
 		</tbody></table>
 	</fieldset>
