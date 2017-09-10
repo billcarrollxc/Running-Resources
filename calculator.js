@@ -1199,3 +1199,18 @@ function totalTime() {
 		);
 	}
 }
+
+function pacePercentages() {
+	var trainingSec = (60*document.pacePercentages.trainingPaceMin) + document.pacePercentages.trainingPaceSec;
+	var raceSec = (60*document.pacePercentaes.racePaceMin) + document.pacePercentages.racePaceSec;
+	var percent = trainingSec/raceSec;
+	
+	if (percent > 1) {
+		percent = 100*(2 - percent);
+	} else if (percent < 1 {
+		percent = 100*(1+(1 - percent));
+	}
+	
+	document.pacePercentages.percentages.value = "".concat(percent.toFixed(1) + "%");
+
+}
