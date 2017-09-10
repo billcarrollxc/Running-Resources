@@ -1211,6 +1211,6 @@ function pacePercentages() {
 		percent = 100*(1+(1 - percent));
 	}
 	
-	document.pacePercentages.percentages.value = "".concat(percent.toFixed(1) + "%");
+	document.pacePercentages.percentage.value = "".concat(percent.toFixed(1) + "%");
 
 }
