@@ -1207,7 +1207,7 @@ function pacePercentages() {
 	
 	if (percent > 1) {
 		percent = 100*(2 - percent);
-	} else if (percent < 1 {
+	} else if (percent < 1) {
 		percent = 100*(1+(1 - percent));
 	}
 	
